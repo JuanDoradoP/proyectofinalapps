@@ -21,6 +21,8 @@ public class ActivityFotoServicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fotoservicio);
 
+
+
         btn_adelante = findViewById(R.id.id_btnadelante);
         btn_regresar= findViewById(R.id.id_btnregresar);
         btn_cancelar= findViewById(R.id.id_btncancelar);
