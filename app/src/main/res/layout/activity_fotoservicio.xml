@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="CANCELAR"
+        android:background="#FF1F1F"
+        android:textColor="#FFF"
+        android:stateListAnimator="@null"
+        android:gravity="center"
+        android:layout_marginLeft="155dp"
+        android:id="@+id/id_btncancelar"
+
+        ></Button>
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/id_btnregresar"
+        android:background="@drawable/regresar"
+        android:stateListAnimator="@null">
+
+    </Button>
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="330dp"
+        android:background="@drawable/adelante"
+        android:id="@+id/id_btnadelante"
+        android:stateListAnimator="@null">
+
+    </Button>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/foto"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

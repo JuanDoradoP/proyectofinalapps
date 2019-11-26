@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/regresar"
+        android:stateListAnimator="@null"
+        android:id="@+id/id_btnregresar">
+
+    </Button>
+
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="330dp"
+        android:background="@drawable/configurar"
+        android:stateListAnimator="@null"
+        android:id="@+id/id_btnconfigurar">
+
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp">
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_foto">
+        </ImageButton>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="36dp"
+            android:textSize="18sp"
+            android:text="ANDRES FELIPE AGUIRRE"
+            android:textColor="#000"
+            android:id="@+id/id_nombre"></TextView>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="76dp"
+            android:textSize="18sp"
+            android:text="Santiago de cali"
+            android:textColor="#000"
+            android:id="@+id/id_ciudad"></TextView>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/puntuacion"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="110dp"></ImageView>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="195dp"
+            android:layout_marginTop="120dp"
+            android:text="4.6"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:id="@+id/id_puntuacion"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="280dp"
+        android:gravity="center">
+
+        <ListView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/id_postsperfil"></ListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

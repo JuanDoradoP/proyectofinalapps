@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_height="380dp"
+    android:layout_width="350dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/id_fotopost"
+        >
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/id_nombrepost">
+    </TextView>
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/id_imagenpost"
+  ></ImageView>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/especificacionespost"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="330dp"
+        android:text="POR:"
+        android:textSize="20dp"
+        android:layout_marginLeft="220dp"
+    >
+
+    </TextView>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="310dp"
+        android:id="@+id/foto2post">
+
+    </ImageButton>
+
+
+</RelativeLayout>

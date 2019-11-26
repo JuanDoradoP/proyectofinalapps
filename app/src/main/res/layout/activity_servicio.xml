@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/color">
+
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/regresar"
+        android:stateListAnimator="@null"
+        android:id="@+id/id_btnregresar">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Servicio de Grúa"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18dp"></TextView>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/grua"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/id_grua"
+            >
+
+        </Button>
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Servicio de lavado"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18dp"
+            ></TextView>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/lavado"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/id_lavado"
+
+
+            >
+
+        </Button>
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Atención Eléctrica"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18dp"></TextView>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/electrico"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/id_electrico"
+
+            >
+
+        </Button>
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Atención Mecánica"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18dp"></TextView>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/mecanico"
+            android:stateListAnimator="@null"
+            android:id="@+id/id_mecanico"
+            >
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

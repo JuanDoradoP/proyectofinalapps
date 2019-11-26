@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/color">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/regresar"
+        android:stateListAnimator="@null"
+        android:id="@+id/id_btnregresar">
+
+    </Button>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/fotopreview"
+        android:background="@drawable/coloredit">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="Usar ubicación Actual"
+            android:background="@drawable/colorboton"
+            android:stateListAnimator="@null"
+            android:id="@+id/id_ubicacionactual"
+            >
+
+        </Button>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="Usar otra ubicación"
+            android:background="@drawable/colorboton"
+            android:stateListAnimator="@null"
+            android:id="@+id/id_otraubicacion"
+            >
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="320dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="82dp"
+        android:layout_marginBottom="160dp"
+      >
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@drawable/coloredit"
+            android:hint="Ciudad"
+            android:gravity="center"
+            android:id="@+id/id_ciudad"></EditText>
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@drawable/coloredit"
+            android:hint="Barrio"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:id="@+id/id_barrio"></EditText>
+
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@drawable/coloredit"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:hint="Carrera/calle"
+                android:textSize="10sp"
+                android:background="#FFFF"
+                android:id="@+id/id_direccion"></EditText>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="#"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"></TextView>
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="10sp"
+                android:background="#FFFF"
+                android:id="@+id/id_num1"></EditText>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="-"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="14dp"
+                ></TextView>
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="10sp"
+                android:background="#FFFF"
+                android:id="@+id/id_num2"></EditText>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            android:textSize="15sp"
+            android:background="@drawable/coloredit"
+            android:hint="Especificaciones"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:id="@+id/id_especificaciones"></EditText>
+
+    </LinearLayout>
+
+
+
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/servicio"
+    android:id="@+id/id_pedirservicio"
+    android:stateListAnimator="@null"></Button>
+
+
+</RelativeLayout>
