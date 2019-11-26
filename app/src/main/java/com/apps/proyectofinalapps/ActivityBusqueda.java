@@ -16,6 +16,10 @@ public class ActivityBusqueda extends AppCompatActivity {
     private EditText txt_busqueda;
     private Button cancelar;
     private Button buscar;
+    private Button VariablePrueba;
+
+
+
     private ListView listabusqueda;
 
     @Override
