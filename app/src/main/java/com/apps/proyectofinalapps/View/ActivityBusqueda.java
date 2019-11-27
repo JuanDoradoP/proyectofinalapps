@@ -1,4 +1,4 @@
-package com.apps.proyectofinalapps;
+package com.apps.proyectofinalapps.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.apps.proyectofinalapps.R;
 
 
 public class ActivityBusqueda extends AppCompatActivity {

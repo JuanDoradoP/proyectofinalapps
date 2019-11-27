@@ -1,4 +1,4 @@
-package com.apps.proyectofinalapps;
+package com.apps.proyectofinalapps.View;
 
 import android.os.Bundle;
 import android.widget.ImageButton;
@@ -6,6 +6,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.apps.proyectofinalapps.R;
 
 public class ActivityPost extends AppCompatActivity {
 

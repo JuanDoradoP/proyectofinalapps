@@ -1,4 +1,4 @@
-package com.apps.proyectofinalapps;
+package com.apps.proyectofinalapps.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.apps.proyectofinalapps.R;
 
 public class ActivityFotoServicio extends AppCompatActivity {
 

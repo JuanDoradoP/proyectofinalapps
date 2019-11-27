@@ -74,120 +74,42 @@
 
         <LinearLayout
             android:layout_width="240dp"
-            android:layout_height="80dp"
+            android:layout_height="140dp"
             android:background="@drawable/coloredit"
             android:layout_marginTop="18dp"
             android:orientation="vertical"
             android:gravity="center">
 
-            <TextView
-            android:layout_height="25dp"
-                android:layout_width="180dp"
-                android:text="Fecha de nacimiento"
+           <com.apps.proyectofinalapps.custom.ScrolledDatePicker
+               android:layout_width="240dp"
+               android:layout_height="140dp"
+               android:id="@+id/id_age"
 
-                android:gravity="center"></TextView>
-
-
-            <LinearLayout
-                android:layout_width="240dp"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:gravity="center"
-                >
-
-                <Spinner
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="20dp"
-                    android:id="@+id/id_dia"
-
-
-
-                    ></Spinner>
-                <Spinner
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="20dp"
-                    android:id="@+id/id_mes"
-
-                    ></Spinner>
-                <Spinner
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="20dp"
-                    android:id="@+id/id_año"
-
-                    ></Spinner>
-            </LinearLayout>
+               ></com.apps.proyectofinalapps.custom.ScrolledDatePicker>
 
 
 
         </LinearLayout>
 
 
-        <EditText
-            android:layout_width="240dp"
-            android:layout_height="40dp"
-            android:background="@drawable/coloredit"
-            android:hint="Ciudad"
-            android:gravity="center"
-            android:layout_marginTop="18dp"
-            android:id="@+id/id_ciudad"></EditText>
 
-        <EditText
-            android:layout_width="240dp"
-            android:layout_height="40dp"
-            android:background="@drawable/coloredit"
-            android:hint="Barrio"
-            android:gravity="center"
-            android:layout_marginTop="18dp"
-            android:id="@+id/id_barrio"></EditText>
 
 
         <LinearLayout
             android:layout_width="240dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:background="@drawable/coloredit"
             android:layout_marginTop="18dp"
             android:orientation="horizontal"
             android:gravity="center">
 
-            <EditText
-                android:id="@+id/id_direccion"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
-                android:background="#FFFF"
-                android:hint="Carrera/calle"
-                android:textSize="10sp"></EditText>
+          <Button
+              android:layout_width="240dp"
+              android:layout_height="40dp"
+              android:background="@drawable/colorboton"
+              android:text="UBICACION">
 
-            <TextView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:text="#"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="4dp"></TextView>
-
-            <EditText
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:textSize="10sp"
-                android:background="#FFFF"
-                android:id="@+id/id_num1"></EditText>
-
-            <TextView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:text="-"
-                android:layout_marginTop="4dp"
-                android:layout_marginLeft="14dp"
-               ></TextView>
-
-            <EditText
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:textSize="10sp"
-                android:background="#FFFF"
-                android:id="@+id/id_num2"></EditText>
+          </Button>
 
         </LinearLayout>
 
