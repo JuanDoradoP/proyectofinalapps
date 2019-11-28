@@ -35,6 +35,9 @@ public class ActivityRegistro extends AppCompatActivity {
     private EditText contraseña2;
     private ScrolledDatePicker age;
 
+    //nombre: servicar
+    //nombre de usuario: servicaricesi@gmail.com
+    //contraseña: m1c0ntr4s3nh4
 
 
 
@@ -56,9 +59,6 @@ public class ActivityRegistro extends AppCompatActivity {
         contraseña2 = findViewById(R.id.id_contraseña2);
         age = findViewById(R.id.id_age);
 
-
-
-
         auth = FirebaseAuth.getInstance();
         db = FirebaseDatabase.getInstance();
 
@@ -66,10 +66,6 @@ public class ActivityRegistro extends AppCompatActivity {
         btn_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ActivityRegistro.this, ActivityMenu.class);
-                startActivity(i);
-
-
                 if (correo.getText().toString().trim().isEmpty()) {
                     Toast.makeText(ActivityRegistro.this, "El campo de email esta vacio", Toast.LENGTH_LONG).show();
                     return;
@@ -92,6 +88,7 @@ public class ActivityRegistro extends AppCompatActivity {
                 ).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(Task<AuthResult> task) {
+                        User user = null;
                         try {
                             if (task.isSuccessful()) {
                                 //Ya estamos logeados
@@ -102,22 +99,24 @@ public class ActivityRegistro extends AppCompatActivity {
                                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
                                 Date date = sdf.parse(birth);
-
-
-                                User user = new User(
+                                Double[] n = new Double[2];
+                                n[0] = 55.23;
+                                n[1] = 23.54;
+                                //TODO poner una forma de diferenciar a los Usuarios
+                                user = new User(
                                         auth.getCurrentUser().getUid(),
                                         nombre.getText().toString(),
                                         correo.getText().toString(),
-                                        birth,
+                                        birth, "user", n,
                                         date.getTime(),
                                         contraseña.getText().toString()
                                 );
-
-                              //  db.getReference().child("users").child(user.getUid())
-                                //        .setValue(user);
-
-
-
+                                db.getReference().child("users").child(user.getUid()).child("mail").setValue(user.getEmail());
+                                db.getReference().child("users").child(user.getUid()).child("name").setValue(user.getName());
+                                db.getReference().child("users").child(user.getUid()).child("type").setValue(user.getType());
+                                db.getReference().child("users").child(user.getUid()).child("place").setValue(n[0] + ":" + n[1]);
+                                db.getReference().child("users").child(user.getUid()).child("birth").setValue(birth);
+                                db.getReference().child("users").child(user.getUid()).child("Value").setValue("5.0");
 
 
                             } else {
@@ -126,6 +125,8 @@ public class ActivityRegistro extends AppCompatActivity {
                         } catch (ParseException e) {
                             e.printStackTrace();
                         }
+                        Intent i = new Intent(ActivityRegistro.this, ActivityMenu.class);
+                        startActivity(i);
                     }
                 });
 

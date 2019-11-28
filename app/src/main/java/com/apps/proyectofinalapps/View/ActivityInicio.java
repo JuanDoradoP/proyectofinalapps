@@ -65,6 +65,7 @@ public class ActivityInicio extends AppCompatActivity {
                                     @Override
                                     public void onComplete(@NonNull Task<AuthResult> task) {
                                         if (task.isSuccessful()) {
+
                                             Intent intent = new Intent(ActivityInicio.this, ActivityMenu.class);
                                             startActivity(intent);
                                             finish();

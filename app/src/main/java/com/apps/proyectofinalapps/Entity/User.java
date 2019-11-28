@@ -1,26 +1,47 @@
 package com.apps.proyectofinalapps.Entity;
 
+import java.io.Serializable;
+
 public class User {
 
     private String uid;
     private String name;
     private String email;
     private String birthday;
+    private String type;
+    private Double[] latLong;
     private long birthdayTimestamp;
     private String password;
 
 
-    public User(String uid, String s, String toString, String birth, long time, String string) {
-    }
-
-    public User(String uid, String name, String email, String username, String phone, String birthday, long birthdayTimestamp, String password) {
+    public User(String uid, String name, String email, String birthday, String type, Double[] latLong, long birthdayTimestamp, String password) {
         this.uid = uid;
         this.name = name;
         this.email = email;
-
         this.birthday = birthday;
+        this.type = type;
+        this.latLong = latLong;
         this.birthdayTimestamp = birthdayTimestamp;
         this.password = password;
+    }
+
+    public User() {
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Double[] getLatLong() {
+        return latLong;
+    }
+
+    public void setLatLong(Double[] latLong) {
+        this.latLong = latLong;
     }
 
     public String getUid() {
