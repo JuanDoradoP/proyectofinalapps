@@ -132,6 +132,7 @@ public class ActivityRegistro extends AppCompatActivity {
             }
         });
 
+
         btn_regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
